@@ -1,0 +1,91 @@
+<!--script calculatrice dial prix total pour payer par raport au nombre des jour-->
+<script>
+    function calculatePrice() {
+        const pricePerDayInput = document.getElementById('pricePerDay').value.replace('DH', '').trim();
+        const pricePerDay = parseFloat(pricePerDayInput);
+        const startDate = new Date(document.getElementById('startDate').value);
+        const endDate = new Date(document.getElementById('endDate').value);
+
+        // Valider les dates et le prix
+        if (isNaN(pricePerDay) || isNaN(startDate.getTime()) || isNaN(endDate.getTime()) || startDate >= endDate) {
+            document.getElementById('totalPrice').value = 'Veuillez vérifier les données.';
+            return;
+        }
+
+        const dayDifference = (endDate - startDate) / (1000 * 60 * 60 * 24); // Convertir en jours
+        const totalPrice = dayDifference * pricePerDay;
+
+        // Afficher le prix total
+        document.getElementById('totalPrice').value = `${totalPrice.toFixed(2)} DH`;
+    }
+
+    // Ajouter des événements pour recalculer automatiquement
+    document.getElementById('startDate').addEventListener('change', calculatePrice);
+    document.getElementById('endDate').addEventListener('change', calculatePrice);
+    document.getElementById('pricePerDay').addEventListener('input', calculatePrice);
+</script>
+ <!-- script dial js page 2home kay affichi alert fach kathovri 3la lboton book  -->
+    <script>
+        // Add hover effect to "BOOK" buttons
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('mouseover', function() {
+                const carName = this.closest('.card-body').querySelector('.card-title').textContent;
+                alert(`You are viewing the booking option for: ${carName}`);
+            });
+        });
+    </script>
+
+<!-- script page audi2 kay affichi alert fach kat clicki 3la boton booknow-->
+<script>
+    // Add click event to the "Book Now" button
+    document.querySelector('.book-now-btn').addEventListener('click', function(event) {
+        alert('You have selected to book the Audi A4. Proceeding to the payment page.');
+    });
+</script>
+
+
+
+<!-- script page pay2 kay forci 3lik bach dekhel lcard id-->
+<script>
+    // Add validation for the "Card ID" field
+    document.querySelector('.btn-primary').addEventListener('click', function(event) {
+        const cardIdInput = document.getElementById('card id');
+        if (!cardIdInput.value.trim()) {
+            event.preventDefault(); // Prevent the default action
+            alert('Please enter your Card ID before proceeding.');
+        }
+    });
+</script>
+
+
+    <!-- script js page login kay obligi 3lik dekhel les champs bzouj lmail u lmdps-->
+    <script>
+        // Add form validation for the login form
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!email || !password) {
+                event.preventDefault(); // Prevent form submission
+                alert('Please fill in both the email and password fields.');
+            }
+        });
+    </script>
+
+ <!--script js page sign up kay validi sign in dialek ou ila kan lpassword ou lconfirmation dialo mkhtalfin kay tele3 lik alert bli mkhtalfin-->
+    <script>
+        // Add form validation for the "Sign Up" form
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.querySelectorAll('#password')[1].value.trim();
+
+            if (!email || !password || !confirmPassword) {
+                event.preventDefault(); // Prevent form submission
+                alert('Please fill in all the fields.');
+            } else if (password !== confirmPassword) {
+                event.preventDefault(); // Prevent form submission
+                alert('Passwords do not match. Please try again.');
+            }
+        });
+    </script>

@@ -1,0 +1,61 @@
+body{
+    background-image: url('bt.webp');
+    background-size: cover;           
+    background-repeat: no-repeat;     
+    background-position: center;
+}
+.okk{
+    text-align: center;
+
+}
+table{
+    background-color: rgba(66, 71, 166, 0.842);
+}
+.di{
+    background-color: rgba(225, 249, 248, 0.685);
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.edu{
+    text-align: center;
+}
+
+.circle {
+        width: 200px; /* Largeur img*/
+        height: 200px; /* Hauteur img */
+        border-radius: 50%; /* Arondi pour créer un cercle */
+        overflow: hidden; /* Masquer le débordement */
+        display:block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle img {
+        width: 100%;
+        height: auto; /* Pour conserver le ratio */
+    }
+
+    .image {
+        width: 15px; /*Largeur img*/
+        height: 15px; /*Hauteur img*/
+        border-radius: 50%; /*Arrondi pour créer un cercle*/
+        overflow: hidden; /*Masquer le débordement*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto; /*Pour conserver le ratio*/
+    }

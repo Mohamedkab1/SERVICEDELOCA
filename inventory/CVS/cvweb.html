@@ -1,0 +1,315 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Kabbaj</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 3px solid #e74c3c;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .about-me {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .about-me h2 {
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        p strong{
+            color: #e74c3c;
+        }
+       .skills {
+            padding: 60px 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 30px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .skills i {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        hr {
+	        grid-column: 1/-1;
+	        width: 100%;
+	        margin: 0 auto;
+	        border: none;
+	        border-top: 2px solid #e74c3c
+}
+        .projects h2 {
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .projects .project-card {
+            display: inline-block;
+            width: 45%;
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .projects .project-card h3 {
+            font-size: 1.8rem;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .projects .project-card p {
+            color: #7f8c8d;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+        
+
+        footer .social-links a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #e74c3c;
+        }
+        strong .edu-items{
+            color:#e74c3c;
+        }
+        @media screen and (max-width: 768px) {
+            .skills ul {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .projects .project-card {
+                width: 90%;
+            }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#Interests">Interests</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Mohamed Kabbaj</h1>
+            <p>Full Stack Developer</p>
+            <p>Creative and passionate developer from Marrakech, Morocco, with a strong background in web development and artistic skills.</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Mohamed Kabbaj</p>
+            <p><strong>Age:</strong> 18 years old</p>
+            <p><strong>Location:</strong> Marrakesh, Morocco</p>
+        </div>
+    </section>
+    <section>
+    </div>
+    <div id="education" class="about-me">
+     <h2>Parcours Educatif</h2>
+     <p class="item_preTitle">2022-2023</p>
+          <p><strong class="item_title">Obtention du Baccalaureat</strong></p>
+          <p class="item_subtitle">
+            ECOLE ARIHA
+          </p>
+        <p class="item_preTitle">2023-2024</p>
+        <p><strong class="item_title">Etudiant option MIP 1ere annee</strong></p>
+        <p class="item_subtitle">
+          FSSM:Faculte des Sciences Semlalia Marrakesh
+        </p>
+     <p>2024-2025</p>
+     <p><strong class="etu-items">Etudiant option DEV DIGITAL 1ere annee</strong></p>
+     <p>
+       OFPPT:Office de Formation Professionel et de Promotin de Travail
+     </p>
+   </div>
+    </section>
+    <section id="Interests" class="skills">
+        <div>
+            <div class="container">
+                <h2>Interests</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-futbol"></i>
+                        <p>Soccer</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-book"></i>
+                        <p>Reading</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-map"></i>
+                        <p>Travelling</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-swimmer"></i>
+                        <p>Swimig</p>
+                    </li>
+                </ol>
+            </div>
+          </div>
+    </section>
+    <hr>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills &amp; Technologies</h2>
+            <ul>
+                <li>
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </li>
+                <li>
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="language">
+            <h3 class="title">LANGUE</h3>
+            <ol class="LANGUE">
+              <li>ANGLAIS</li>
+              <li>FRANCAIS</li>
+              <li>ARABE</li>
+            </ol>
+          </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <h2>Contact</h2>
+            <a href="https://www.facebook.com/mohamed.kabbaj.7739/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/medkabbaj__/"><i class="fab fa-instagram"></i></a>
+            <a href="0657579485"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+</body></html>

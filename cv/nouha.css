@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(205, 207, 74);
+}
+.okk{
+    text-align: center;
+}
+table{
+    background-color: rgba(66, 121, 166, 0.753);
+}
+.di{
+    background-color: rgba(225, 249, 248, 0.685);
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.edu{
+    text-align: center;
+}
+
+.circle {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%;
+        overflow: hidden;
+        display:block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        width: 15px; 
+        height: 15px; 
+        border-radius: 50%; 
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto; 
+    }

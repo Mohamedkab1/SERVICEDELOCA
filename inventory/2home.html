@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Loca - Location de Véhicules</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--script des logo-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('cars de loca.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+        }
+        .overlay{
+            background-color: rgba(7, 59, 90, 0.9);
+            height: 600px;
+        }
+        .navbar {
+            background-color: #073B5A;
+            margin-top: -0px;
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            height: 25px;
+            object-fit: contain;
+            background-color: transparent;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #DD0707 !important;
+        }
+
+        .hero {
+            margin-top: 70px;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .car-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            color: white;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 100px;
+            height: 3px;
+            background-color: #DD0707;
+            transform: translateX(-50%);
+        }
+
+        .btn-primary {
+            background-color: #073B5A;
+            border-color: #073B5A;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #DD0707;
+            border-color: #DD0707;
+        }
+
+        footer {
+            background-color: rgba(7, 59, 90, 0.9);
+            color: white;
+            margin-bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="overlay">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container" >
+                <a class="navbar-brand" href="../index.html" >
+                    <img src="11.png" alt="Service de loca" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Homepage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../inventory/2home.html">Vehicles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../loging.html"><ion-icon name="person-add" style="color: rgb(114, 199, 114);"></ion-icon><strong> LOGIN</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Hero Section -->
+         <section id="home" class="hero text-white text-center">
+            <div class="container">
+                <h1 class="display-4 mb-4">Our vehicles are of high quality</h1>
+                <p class="lead mb-5">Find the perfect car for all your trips</p>
+                <a href="#cars" class="btn btn-primary btn-lg">Discover our Vehicles</a>
+            </div>
+        </section>
+        </div>
+
+        <!-- Car Fleet Section -->
+        <section id="cars" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Our Fleet</h2>
+                <div class="row">
+                    <!-- First Set of Cars -->
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Audi A4.webp" class="card-img-top" alt="Voiture Économique">
+                            <div class="card-body">
+                                <h5 class="card-title">AUDI A4</h5>
+                                <p class="card-text text-muted">Compact and efficient for the city</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">1200 DH / day</span>
+                                    <a href="../desc cars/Audi 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Audi Q3 sportback.jpeg" class="card-img-top" alt="Voiture Familiale">
+                            <div class="card-body">
+                                <h5 class="card-title">AUDI Q3 Sportback</h5>
+                                <p class="card-text text-muted">Comfortable for family travel</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">1000 DH / day</span>
+                                    <a href="../desc cars/Audi 1 +.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="BMW iX.jpg" style="background-color: rgb(102, 49, 49);" class="card-img-top" alt="Voiture de Luxe" >
+                            <div class="card-body">
+                                <h5 class="card-title">BMW iX</h5>
+                                <p class="card-text text-muted">Premium elegance and performance</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">800 DH / day</span>
+                                    <a href="../desc cars/BMW 1.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="BMW i7.jpg" class="card-img-top" alt="Voiture Moyenne Gamme" style="background-color: rgb(64, 79, 82);">
+                            <div class="card-body">
+                                <h5 class="card-title">BMW i7</h5>
+                                <p class="card-text text-muted">Performance and comfort</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">950 DH / day</span>
+                                    <a href="../desc cars/BMW 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Mecedess-Benz class A.webp" class="card-img-top" alt="SUV Compact">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes-benz Classe A</h5>
+                                <p class="card-text text-muted">Versatile and spacious</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">1500 DH / day</span>
+                                    <a href="../desc cars/Mercedess 1 - Copy.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Mercedes-benz GLE.webp" class="card-img-top" alt="Voiture Sport">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes-benz GLE</h5>
+                                <p class="card-text text-muted">Sensation and adrenaline</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">2500 DH / day</span>
+                                    <a href="../desc cars/Mercedes 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Additional Cars -->
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Peujeot 208.jpg" class="card-img-top" alt="Voiture Électrique">
+                            <div class="card-body">
+                                <h5 class="card-title">Peujeot 208</h5>
+                                <p class="card-text text-muted">Ecological and modern</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">400 DH / day</span>
+                                    <a href="../desc cars/PEUJEOT 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="peug508.jpg" class="card-img-top" alt="Voiture Utilitaire">
+                            <div class="card-body">
+                                <h5 class="card-title">Peujeot 508</h5>
+                                <p class="card-text text-muted">Practical for moving</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">600 DH / day</span>
+                                    <a href="../desc cars/PEUJEOT 1.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Porsch red cherry 911.jpg" class="card-img-top" alt="Voiture Cabriolet">
+                            <div class="card-body">
+                                <h5 class="card-title">Porsche red cherry 911</h5>
+                                <p class="card-text text-muted">Freedom and driving pleasure</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">5000 DH / day</span>
+                                    <a href="../desc cars/PORSCHE 1.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Porsch Macan GTS.jpg" class="card-img-top" alt="Voiture Hybride">
+                            <div class="card-body">
+                                <h5 class="card-title">Porsche Macan GTS</h5>
+                                <p class="card-text text-muted">Economy and efficiency</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">3000 DH / day</span>
+                                    <a href="../desc cars/PORSCHE 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Toyota C-HR.jpg" class="card-img-top" alt="Van de Voyage">
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota C-HR</h5>
+                                <p class="card-text text-muted">Ideal for groups</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">1200 DH / day</span>
+                                    <a href="../desc cars/Toyota 2.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card car-card">
+                            <img src="Toyota Yaris GR.jpg" class="card-img-top" alt="Voiture de Collection">
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota Yaris GR</h5>
+                                <p class="card-text text-muted">Vintage elegance</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">1500 DH / day</span>
+                                    <a href="../desc cars/Toyota 1.html" class="btn btn-primary btn-sm">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Add other sections here -->
+    </div>
+    <footer style="background-color: #073B5A; color: #ffffff; padding: 20px 0;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+          <!-- About Section -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="color: rgb(114, 199, 114);">SERVICE DE LOCA</h3>
+            <p>
+              SERVICE DE LOCA offers reliable, affordable rentals with a diverse fleet and excellent service for all your travel needs. Experience seamless car rental with us.
+            </p>
+          </div>
+          
+          <!-- Location Section -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="color: rgb(114, 199, 114);">Localisation</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0000000!2d-7.987345!3d31.65432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9edf0000000000%3A0x0000000000000000!2sSpingo+Rent+Car!5e0!3m2!1sen!2sma!4v1234567890"
+              width="100%" height="150" style="border:0;"  loading="fast"></iframe>
+          </div>
+          
+          <!-- Contact Section -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="color: rgb(114, 199, 114);">Contact</h3>
+            <p>
+              Daoudiate Marrakesh<br>
+           
+              40000 Marrakesh, Morocco
+            </p>
+            <p>
+              <strong style="color: rgb(114, 199, 114);">P:</strong> +212 012 344 678 / 62<br>
+              <strong style="color: rgb(114, 199, 114);">E:</strong> contact@servicedeloca.com
+            </p>
+          </div>
+          
+          <!-- Social Section -->
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="color: rgb(114, 199, 114);">Social</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-facebook" style="color: rgb(114, 199, 114);"></ion-icon> Facebook</a></li>
+              <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-linkedin" style="color: rgb(114, 199, 114);"></ion-icon> LinkedIn</a></li>
+              <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-pinterest" style="color: rgb(114, 199, 114);"></ion-icon> Pinterest</a></li>
+              <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-instagram" style="color: rgb(114, 199, 114);"></ion-icon> Instagram</a></li>
+              <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-twitter" style="color: rgb(114, 199, 114);"></ion-icon> Twitter</a></li>
+            </ul>
+          </div>
+          <div style="flex: 1; min-width: 200px; margin: 10px;">
+            <h3 style="color: rgb(114, 199, 114);">Team</h3>
+            <ul>
+             <li><a style="text-decoration: none; color: #ffffff;" href="../cv/cvweb.html">MOHAMED KABBAJ</a></li>
+             <li><a style="text-decoration: none; color: #ffffff;" href="../cv/abdessamad.html">ABDESSAMAD BENADDI</a></li>
+             <li><a style="text-decoration: none; color: #ffffff;" href="../cv/moncv.html">ANAS SEDDAOUI</a></li>
+             <li><a style="text-decoration: none; color: #ffffff;" href="../cv/nouha.html">NOUHAILA TIZY</a></li>
+            </ul>
+          </div>
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="#" style="color: #ffffff; margin: 0 10px;">Home</a> -
+          <a href="#" style="color: #ffffff; margin: 0 10px;">Terms & Conditions</a> -
+          <a href="#" style="color: #ffffff; margin: 0 10px;">Privacy Policy</a> -
+          <a href="#" style="color: #ffffff; margin: 0 10px;">Contact</a>
+          <p style="margin-top: 10px;">&copy; COPYRIGHT 2024 BY 212COMMUNICATION</p>
+        </div>
+      </footer>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      2<!-- script dial js page 2home kay affichi alert fach kathovri 3la lboton book  -->
+    <script>
+        // Add hover effect to "BOOK" buttons
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('mouseover', function() {
+                const carName = this.closest('.card-body').querySelector('.card-title').textContent;
+                alert(`You are viewing the booking option for: ${carName}`);
+            });
+        });
+    </script>
+</body>
+</html>

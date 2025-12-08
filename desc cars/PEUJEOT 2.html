@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Voiture</title>
+  <!-- Lien vers Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers une feuille de style personnalisée -->
+   <!--script des logo-->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   
+  <style>
+      body{
+         background-color:  rgba(11, 95, 143, 0.9);
+         background-size: cover;
+         background-attachment: fixed;
+        }
+ /* navbar */
+ .navbar {
+            margin-top: -0px;
+            padding: 15px 0;
+            box-shadow: 0px 26px 16px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .navbar {
+            background-color: #073B5A;
+            margin-top: -0px;
+            padding: 15px 0;
+            box-shadow: 0px 26px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand img {
+            height: 25px;
+            object-fit: contain;
+            background-color: transparent;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #DD0707 !important;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+          
+        }
+        .carousel {
+            max-width: 1200px;
+            margin: auto;
+        }
+    .features-table th, .features-table td {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      
+      
+    }
+    .book-now-btn {
+                                background-color: #17384c;
+                                color: rgb(114, 199, 114);
+                                padding: 15px 39px;
+                                border: none;
+                                border-radius: 19px;
+                                font-weight: 600;
+                                transition: all 0.3s;
+                                width: 78% ;
+                                margin-left: 10%;
+                                align-items: center;
+                            }
+                    
+                            .book-now-btn:hover {
+                                background-color: #191717;
+                                transform: translateY(-2px);
+                            }
+
+img{
+    border-radius: 25px;
+    
+}
+footer {
+            background-color: rgb(7, 59, 90, 0.9)
+            
+            
+}
+.para1{color: #000000ec;
+
+}
+.th{
+  color: rgba(0, 0, 0, 0.916);
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container" >
+        <a class="navbar-brand" href="../index.html" >
+            <img src="car3.png" alt="Service de loca" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../inventory/2home.html">Vehicles</a></li>
+                <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="../loging.html"><ion-icon name="person-add" style="color: rgb(114, 199, 114);"></ion-icon> LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+
+  <div class="container my-5" >
+
+    <!-- Nom du véhicule en haut -->
+    <div class="text-center" style="margin-top: 150px;">
+      <h1 style="color: rgba(255, 255, 255, 0.845);">Peujeot 208</h1>
+      <p class="lead" style="color: rgb(0, 0, 15);">Comfortable and efficient car rental</p>
+    </div>
+    
+    <div class="container my-5">
+      <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="peujot vert.jpg" class="d-block w-100" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="format-insta-peugeot-24.webp" class="d-block w-100" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="format-insta-peugeot-23.webp" class="d-block w-100" alt="Image 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+    <!-- Book Now Button -->
+    <a href="../pay12/pay8.html"><button class="book-now-btn" >Book Now</button></a>
+    <!-- Description du véhicule -->
+    <div class="my-4">
+      <h3  style="color: rgb(255, 255, 255);">Description</h3>
+      <p  style="color: rgba(0, 0, 0, 0.916);">
+        The Peugeot 208 is a compact and stylish city car, ideal for urban journeys. Its modern design and careful finishes catch the eye, while its comfortable interior is equipped with the Peugeot i-Cockpit interface, offering an intuitive and pleasant driving experience.    </p>
+    <h6  style="color: rgb(255, 255, 255);">
+        Advantages of the Peugeot 208 for rental:
+    </h6>
+    <p>
+    
+<ul>
+
+<li  style="color: rgba(0, 0, 0, 0.916);">Ease of driving in the city: Small size and optimal maneuverability
+
+
+</li>
+
+<li  style="color: rgba(0, 0, 0, 0.916);">Comfort and modern equipment: Comfortable seats, smartphone connectivity, and touch screen.
+
+</li>
+
+
+<li  style="color: rgba(0, 0, 0, 0.916);">efficiency: Available in petrol, diesel and electric versions, it saves fuel.
+
+</li>
+
+ </p>
+    <h6>
+      
+
+    </div>
+
+    <!-- Caractéristiques de la voiture sous forme de tableau -->
+    <div class="my-4">
+        <h3 style="color: rgba(255, 255, 255, 0.916);">Car features</h3>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.916);">Brand</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">Peujeot</td>
+                </tr>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.916);">Model</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">208</td>
+                </tr>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.769);">fuel type</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">Petrol (Hybrid)</td>
+                </tr>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.769);">Transmission</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">Manual</td>
+                </tr>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.769);">Ability</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">5 places</td>
+                </tr>
+                <tr>
+                    <th style="color: rgba(0, 0, 0, 0.769);">Price Per day</th>
+                    <td style="color: rgba(0, 0, 0, 0.916);">400 DH</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+
+<!-- Lien vers les scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+</body>
+<footer>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+  <!-- About Section -->
+  <div style="flex: 1; min-width: 200px; margin: 10px;">
+    <h3 style="color: rgb(114, 199, 114);">SERVICE DE LOCA</h3>
+    <p style="color: rgba(255, 254, 254, 0.916);">
+      SERVICE DE LOCA offers reliable, affordable rentals with a diverse fleet and excellent service for all your travel needs. Experience seamless car rental with us.
+    </p>
+  </div>
+  
+  <!-- Location Section -->
+  <div style="flex: 1; min-width: 200px; margin: 10px;">
+    <h3 style="color: rgb(114, 199, 114);">Location</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0000000!2d-7.987345!3d31.65432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9edf0000000000%3A0x0000000000000000!2sSpingo+Rent+Car!5e0!3m2!1sen!2sma!4v1234567890"
+      width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  
+  <!-- Contact Section -->
+  <div style="flex: 1; min-width: 200px; margin: 10px;">
+    <h3 style="color: rgb(114, 199, 114);">Contact</h3>
+    <p style="color: rgb(255, 255, 255);">
+      Daoudiate Marrakesh<br>
+      hhhhhhhhhhhhhhhh<br>
+      40000 Marrakesh, Morocco
+    </p>
+    <p style="color: rgb(255, 255, 255);">
+      <strong style="color: rgb(114, 199, 114);">P:</strong> +212 012 344 678 / 62<br>
+      <strong style="color: rgb(114, 199, 114);">E:</strong> contact@servicedeloca.com
+    </p>
+  </div>
+  
+  <!-- Social Section -->
+  <div style="flex: 1; min-width: 200px; margin: 10px;">
+    <h3 style="color: rgb(114, 199, 114);">Social</h3>
+    <ul style="list-style: none; padding: 0;">
+      <li ><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-facebook" style="color: rgb(114, 199, 114);"></ion-icon> Facebook</a></li>
+      <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-linkedin" style="color: rgb(114, 199, 114);"></ion-icon> LinkedIn</a></li>
+      <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-pinterest" style="color: rgb(114, 199, 114);"></ion-icon> Pinterest</a></li>
+      <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-instagram" style="color: rgb(114, 199, 114);"></ion-icon> Instagram</a></li>
+      <li><a href="#" style="color: #ffffff; text-decoration: none;"><ion-icon name="logo-twitter" style="color: rgb(114, 199, 114);"></ion-icon> Twitter</a></li>
+
+    </ul>
+  </div>
+  <div style="flex: 1; min-width: 200px; margin: 10px;">
+    <h3 style="color: rgb(114, 199, 114);">Team</h3>
+    <ul>
+     <li><a style="text-decoration: none; color: #ffffff;" href="../cv/cvweb.html">MOHAMED KABBAJ</a></li>
+     <li><a style="text-decoration: none; color: #ffffff;" href="../cv/moncv.html">ANAS SEDDAOUI</a></li>
+     <li><a style="text-decoration: none; color: #ffffff;" href="../cv/abdessamad.html">ABDESSAMAD BENADDI</a></li>
+     <li><a style="text-decoration: none; color: #ffffff;" href="../cv/nouha.html">NOUHAILA TIZY</a></li>
+    </ul>
+ </div>
+<div style="text-align: center; margin-top: 20px;">
+  <a href="#" style="color: #ffffff; margin: 0 10px;">Home</a> -
+  <a href="#" style="color: #ffffff; margin: 0 10px;">Terms & Conditions</a> -
+  <a href="#" style="color: #ffffff; margin: 0 10px;">Privacy Policy</a> -
+  <a href="#" style="color: #ffffff; margin: 0 10px;">Contact</a>
+  <p style="margin-top: 15px; color: #000000cc;" >&copy; COPYRIGHT 2024 BY 212COMMUNICATION</p>
+</div>
+</footer>
+
+
+</html>
